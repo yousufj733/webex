@@ -1,0 +1,19 @@
+
+/* ##########################   Media Queries  (Mobile)
+############################*/
+@media  screen and (max-width:600px)
+
+{
+
+.container
+{
+width: 97%;
+}
+footer p{
+
+margin-bottom:15px;
+
+}
+}
+
+

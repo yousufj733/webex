@@ -1,0 +1,212 @@
+
+
+/* Nav Menu css  */
+nav 
+{
+    width:99vw;
+    height: 8rem;
+    position: fixed;
+    z-index: 10;
+    padding: 2rem 0;
+  
+}
+.nav__logo
+{
+
+font-family: 'Heebo';
+font-style: normal;
+font-weight: 800;
+font-size: 33px;
+line-height: 53px;
+color: #333333;
+
+}
+
+.main__nav {
+display: flex;
+justify-content:space-between;
+align-items: center;
+align-self: center;
+width: 1332px;
+margin: 0 auto;
+gap: 2rem;
+}
+
+.main__nav  ul
+{
+    display: flex;
+    gap: 4rem;
+    
+}
+
+.main__nav  ul li  a {
+   
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;    
+    color: #333333;
+   
+  }
+
+
+  
+  .main__nav  ul li a::after
+  {
+      content:" ";
+      width: 0%;
+      font-weight: 700;
+      height:2px;
+      background-color:white;
+      display: block;
+      transition: 0.5s;
+      margin:5px auto;
+  }
+  .main__nav  ul li   a:hover::after
+  {
+     width: 90%;
+  }
+
+
+
+/* Hamburgar button  */
+button 
+{
+display: none;
+color: #000;
+}
+
+
+
+/*============================================
+============================================   sticky menu  */
+.nav__height
+{
+height: 110px;
+}
+.window-scroll  
+{
+  background: rgba(255,255,255,0.4);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+
+}
+
+/*=================================== Media Queries ( Medium ) 
+============================================*/
+
+
+@media screen and (max-width:1024px)
+{
+        nav 
+        {
+        width: 100vw;
+        }
+        .main__nav
+        {
+        width: 90%;
+        }
+       
+        a{
+        color:black;
+        font-weight: 500;
+        font-size: 15px;
+        } 
+
+
+      /*###############################    Mobile menu css
+       */
+
+        .main__nav ul
+        {
+        position: fixed;
+        right: 0%;
+        background: #181719;
+        /* background: #4b60a593; */
+        padding: 190px 0;
+        top: 6rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        display: none;
+        perspective: 300px;
+        width:100%;
+        margin-right:0px;
+        }
+        .main__nav  li 
+        {
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        animation: filpNavItem 900ms ease forwards;
+        transform-origin: top;
+        margin-top: -30px;
+        }
+        .main__nav ul li a {
+        color: #fcfcfc;
+        padding: 11px 0;
+        display: block;
+        }
+
+/* Menu button icon css  */
+
+nav button 
+{
+display: inline-block;
+color: #fff!important;
+cursor: pointer;
+border: none;
+background-color: #2D9CDB;
+font-size: 1rem;
+padding: 1rem;
+}
+#close__nav-btn
+{
+display: none;
+}
+
+
+/*######################## Animation CSS
+             */
+           li:nth-child(2)
+           {
+                       animation-delay: 300ms;
+           }
+           li:nth-child(3)
+           {
+                       animation-delay: 600ms;
+           }
+           li:nth-child(4)
+           {
+                       animation-delay: 900ms;
+           }
+           li:nth-child(5)
+           {
+                       animation-delay: 1200ms;
+           }
+@keyframes filpNavItem {
+
+0%{
+transform: rotateX(20deg);
+
+}
+100%
+{
+transform: rotateX(0deg);
+opacity: 1;
+}
+}
+    
+.main__nav  ul li   a:hover::after
+{
+   width: 10%;
+}
+
+
+
+}
+         
+
+
