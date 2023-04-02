@@ -5,10 +5,78 @@
 
 {
 
+section 
+{
+    padding: 5rem 0;
+}
+
+
 .container
 {
-width: 97%;
+    width: 90%;
 }
+
+
+/* Hero CSS  */
+/* .hero__image__container 
+{
+    
+    
+} */
+.hero__image__container img 
+{
+    width: 448px;
+    height: 165px;
+    border-radius: 12px!important;
+}
+.lead
+{
+    font-size: 12px;
+line-height: 18px;
+}
+.hero__container 
+{
+    margin-left: 44px;
+}
+.hero__container p
+{
+width: 275px;
+font-size: 12px;
+line-height: 18px;
+}
+.hero__container h2 
+{
+width: 272px;
+font-size: 24px;
+line-height: 36px;
+}
+
+input 
+{
+    width: 291px;
+}
+/* ################## Service CSS  */
+.service__head 
+{
+    margin-left: 45px;
+}
+.service__head p 
+{
+font-size: 24px;
+line-height: 36px;
+}
+.service__bottom
+{
+    grid-template-columns:1fr;
+    gap: 1rem;
+}
+input[type="submit"] {
+  
+    width: 23%;
+
+}
+
+    /* Footer Css  */
 footer p{
 
 margin-bottom:15px;

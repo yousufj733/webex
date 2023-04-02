@@ -23,12 +23,13 @@ color: #333333;
 }
 
 .main__nav {
+  width: 1332px;
+margin: 0 auto;
 display: flex;
 justify-content:space-between;
 align-items: center;
 align-self: center;
-width: 1332px;
-margin: 0 auto;
+
 gap: 2rem;
 }
 
