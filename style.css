@@ -15,7 +15,8 @@ body
 }
 section 
 {
-    padding-top: 10rem ;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
 }
 
 img 
@@ -198,7 +199,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 
-/* Gray 2 */
+/* Gray 2 */width: 293px;
 color: #4F4F4F;
 }
 
@@ -234,11 +235,292 @@ color: white;
 }
 .work__head p 
 {
-    font-family: 'Poppins';
+font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
 font-size: 36px;
 line-height: 54px;
 width: 446px;
 color: #333333;
+}
+
+.showcase
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.showcase__box:nth-child(odd)
+{
+   padding-top: 5rem;
+}
+.showcase__box:nth-child(even)
+{
+   padding-bottom: 5rem;
+}
+
+.showcase__details small
+{
+margin-top: 1rem;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 21px;
+color: #828282;
+}
+
+.showcase__details  h6 
+{
+    
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+
+color: #333333;
+}
+
+
+.showcase__details p
+{
+    text-align: right;
+    margin-top: 3.5rem;
+
+}
+.showcase__details p a 
+{
+    color: #2D9CDB!important;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    
+}
+
+
+/* Team CSS  */
+.team__container
+{
+    display: flex;
+    justify-content: space-between;
+    width: 1099px;
+}
+
+.team__container img
+{
+    width: 260px;
+    height: 260px;
+    border-radius: 24px;
+}
+
+.team__left
+{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.team__left small 
+{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+color: #EB5757;
+}
+.team__left h3 
+{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    width: 280px;
+    color: #333333;
+
+}
+.team__left p 
+{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+width: 273px;
+/* Gray 2 */
+color: #4F4F4F;
+
+}
+.team__right
+{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.dflex
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+/* ################### Testimonial CSS */
+
+.testimonial__container
+{
+    width: 1099px;
+}
+.testimonial__container h3
+{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+ margin-bottom: 4rem;
+    color: #333333;
+    width: 937px;
+}
+
+.clients
+{
+    display: flex;
+   gap: 1.5rem;
+}
+.clients__details
+{
+    margin-top: .5rem;
+}
+.clients__details h6 
+{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+color: #333333;
+}
+.clients__details small 
+{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+
+color: #828282;
+
+
+}
+.clients__img img 
+{
+    width: 135px;
+height: 132px;
+border-radius: 12px;
+}
+
+
+/* ######################### Footer CSS  */
+
+footer
+{
+    background: #000;
+    padding: 5rem 0 15rem 0;
+    color: #FFF;
+}
+
+.footer__container
+{
+    
+    width: 1099px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* gap: 2rem; */
+}
+
+.div__1 li a 
+{
+    color: #FFF;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 200%;
+
+/* or 36px */
+
+color: #FFFFFF;
+
+
+}
+
+.div__2 p
+{
+font-family: 'Heebo';
+font-style: normal;
+font-weight: 800;
+font-size: 36px;
+/* line-height: 53px; */
+color: #F2F2F2;
+
+}
+.footer__social
+{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.footer__social i
+{
+    Width:24px;
+Height:24px;
+background: #F2F2F2;
+color: #000;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.div__3 p
+{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+margin-bottom: 1rem;
+color: #F2F2F2;
+}
+
+/* Copyright  */
+.copyright__container
+{
+    width: 100%;
+    text-align: center;
+    background: #000;
+    color:#FFF;
+}
+.copyright__container p
+{
+padding-bottom:15px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+
+/* identical to box height */
+text-align: center;
+
+color: #F2F2F2;
+
+
+}
+.copyright__container strong 
+{
+    text-decoration: underline;
 }
