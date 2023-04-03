@@ -25,9 +25,11 @@ section
 } */
 .hero__image__container img 
 {
-    width: 448px;
-    height: 165px;
-    border-radius: 12px!important;
+    /* width: 448px;
+   
+     */
+    height: 175px;
+    border-radius: 9px!important;
 }
 .lead
 {
@@ -50,11 +52,15 @@ width: 272px;
 font-size: 24px;
 line-height: 36px;
 }
+input[type="email"] {
 
-input 
+width: 70%;
+  
+}
+/* input 
 {
     width: 291px;
-}
+} */
 /* ################## Service CSS  */
 .service__head 
 {
@@ -70,18 +76,117 @@ line-height: 36px;
     grid-template-columns:1fr;
     gap: 1rem;
 }
-input[type="submit"] {
+/* input[type="submit"] {
   
     width: 23%;
 
+} */
+/*###################### Work CSS  */
+ .work__head p {
+    font-size: 24px;
+line-height: 36px;
+width: 267px;
+ }  
+
+.showcase
+{
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
-    /* Footer Css  */
-footer p{
+.showcase__box:nth-child(odd)
+{
+   padding-top: 0;
+}
+.showcase__box:nth-child(even)
+{
+   padding-bottom: 0;
+}
 
-margin-bottom:15px;
+
+.showcase__details small
+{
+    font-size: 12px;
+line-height: 18px;
+}
+.showcase__details h6 
+{
+    font-size: 18px;
+line-height: 27px;
+}
+.showcase__details p
+{
+text-align: left;
+margin-top: 1rem;
+}
+
+
+/* Team CSS  */
+.team__container
+{
+   flex-direction: column;
+  
+}
+.team__left p 
+{
+    margin-bottom: 3rem;
+}
+.team__left
+{
+   
+    align-self: flex-start;
+    gap:0;
+}
+
+.team__container img 
+{
+    width: 162.25px;
+height: 167.03px;
+}
+
+/* Testimonila  */
+
+.testimonial__container h3 
+{
+    width: 351px;
+font-size: 24px;
+line-height: 36px;
+}
+
+
+/*######### Footer Css  */
+
+
+.footer__container
+{
+    
+   
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    padding: 0 2rem;
+}
+footer
+{
+   
+    padding: 5rem 0 7rem 0;
+    
+}
+
+
+/* Copyright  */
+.copyright__container
+{
+    width: 100%;
+    padding: 0 2rem;
+}
+.copyright__container p{
+
+padding-bottom:15px;
+padding-left: 25px;
+
+text-align: left;
 
 }
 }
-
 
